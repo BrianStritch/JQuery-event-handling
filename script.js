@@ -17,12 +17,13 @@ $(document).ready(function() {
 	// });
 
 	/***************************************** method chaining  *****************************************************/
-	$('#myButton').removeClass('blueBox');
-	$('#myButton').addClass('border');
+	// $('#myButton').removeClass('blueBox');
+	// $('#myButton').addClass('border');
+    // $('#myButton').removeClass('blueBox').addClass('border');  // same as the two functions above but now are chained.
 
-    $('#myButton').removeClass('blueBox').addClass('border');  // same as the two functions above but now are chained.
-    $('p').css('color','blue').slideUp(2000).slideDown(2000);  // can also be used for events and styles etc
-	$('a').attr('href','http://www.example.com'); // can be used to query a href from an anchor and then add a href to the anchor
+	
+    // $('p').css('color','blue').slideUp(2000).slideDown(2000);  // can also be used for events and styles etc
+	// $('a').attr('href','http://www.example.com'); // can be used to query a href from an anchor and then add a href to the anchor
 
 
 
