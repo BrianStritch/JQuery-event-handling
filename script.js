@@ -1,5 +1,5 @@
 $(document).ready(function() {
- 
+    // ************************************  J Query effects ***************************************************
     // $("#stream1_btn").on(function() {
 	// 	$(".stream1").show();
 	// 	$(".stream1").hide();  // the speeds below can be used for hide and show
@@ -16,6 +16,17 @@ $(document).ready(function() {
 	// 	$(".stream1").show(1000);  // this 1000 is milliseconds
 	// });
 
+	/***************************************** method chaining  *****************************************************/
+	$('#myButton').removeClass('blueBox');
+	$('#myButton').addClass('border');
+
+    $('#myButton').removeClass('blueBox').addClass('border');  // same as the two functions above but now are chained.
+    $('p').css('color','blue').slideUp(2000).slideDown(2000);  // can also be used for events and styles etc
+	$('a').attr('href','http://www.example.com'); // can be used to query a href from an anchor and then add a href to the anchor
+
+
+
+    /*********************************************original script code ************************************************/
  	$("#stream1_btn").on("click", function() {   // you can also use .click(function.....) instead of on.('click',function .....)
  		$(".stream1").removeClass('highlight_stream');
 		$(".stream2").removeClass('highlight_stream');
